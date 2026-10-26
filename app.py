@@ -16,7 +16,7 @@ st.set_page_config(page_title="Bengaluru Urban Rainfall Dashboard",
 # ---------------------------------------------------------------- settings
 ADMIN_EMAIL = "adminuser12@gmail.com"
 ADMIN_PASSWORD = "1122334455"
-DATA_DIR = Path(__file__).parent / "data"
+DATA_DIR = Path(__file__).parent
 TALUKS = ["Anekal", "Bengaluru North", "Bengaluru South", "Bengaluru East", "Yelahanka"]
 SEASONS = ["Annual", "Pre-monsoon", "SW monsoon", "NE monsoon"]
 YEARS = [2022, 2023, 2024]
