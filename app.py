@@ -106,10 +106,10 @@ def dashboard() -> None:
 
     # ---- slicers
     with st.container(border=True):
-        c1, c2, c3 = st.columns([1.3, 2.6, 1.8])
-        year_pick = c1.radio("Year", ["All Years"] + YEARS, horizontal=True)
-        taluk_pick = c2.radio("Taluk", ["All taluks"] + TALUKS, horizontal=True)
-        season = c3.radio("Season", SEASONS, horizontal=True)
+        c1, c2, c3 = st.columns(3)
+        year_pick = c1.selectbox("Year", ["All Years"] + YEARS)
+        taluk_pick = c2.selectbox("Taluk", ["All taluks"] + TALUKS)
+        season = c3.selectbox("Season", SEASONS)
 
     N, A = f"{season} Normal", f"{season} Actual"
     sel = data.copy()
